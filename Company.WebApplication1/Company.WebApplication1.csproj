@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <RootNamespace>Company.WebApplication1</RootNamespace>
+    <AssemblyName>Company.WebApplication1</AssemblyName>
+    <Authors>DACompany</Authors>
+    <Product>ASP.NET Core 2.2 - Razor Pages Web App</Product>
+    <Description>Description:- A project template for creating an ASP.NET Core application with additional example ASP.NET Razor Pages content</Description>
+    <PackageIconUrl>template.ico</PackageIconUrl>
+    <PackageTags>C#,  Razor Web App</PackageTags>
+    <PackageReleaseNotes>Release -1</PackageReleaseNotes>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>

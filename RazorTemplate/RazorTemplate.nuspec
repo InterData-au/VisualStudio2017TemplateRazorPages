@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>RazorTemplate.DACompany</id>
+    <version>1.1</version>
+    <title>ASP.NET Core 2.2 Razor Web Templates package </title>
+    <authors>DACompany</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <icon>template.png</icon> 
+   
+    <description>New custom project template 2.2</description>
+    <releaseNotes>This provide additional Razor page template.</releaseNotes>
+    <copyright>$copyright$ 2018 DACompany</copyright>
+    <tags>asp.net-core-2.1 asp.net-core-2.2 Razor</tags>
+  </metadata>
+
+  <files>
+		<file src="template.png" target="" />
+        <file src="..\Company.WebApplication1\**\*.*" exclude="**\bin\**\*;**\obj\**\*;**\launchSettings.json;**/*.user" target="content\RazorPages.App22" />
+  </files>
+</package>

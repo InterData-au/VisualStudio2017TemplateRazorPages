@@ -18,7 +18,7 @@ namespace Company.WebApplication1.Pages
 
         public string OSDescription;
         public string ProcessArchitecture;
-        public string version;
+        public string VersionText;
         public string ThisEnvironment { get; set; }
         public string CurrentRunTimeVersion { get; set; }
         public string MyApplicationName { get; set; }
@@ -44,7 +44,10 @@ namespace Company.WebApplication1.Pages
             CurrentRunTimeVersion = System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription;
             OSDescription = System.Runtime.InteropServices.RuntimeInformation.OSDescription;
             ProcessArchitecture = System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture.ToString();
-            version = "Version: " + @System.Environment.Version + " installed in: " + @System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory();
+
+            
+            VersionText = "Version: " + DevFileUtilities.GetNetCoreVersion() + " installed in: " + @System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeDirectory();
+
             _logger.LogInformation("Completed Index.OnGet, {ThisEnvironment}!", ThisEnvironment);
 
             var asembli = Assembly.GetExecutingAssembly();
